@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Mail, Clock, Instagram, MessageCircle, CheckCircle } from 'lucide-react'
+import { Mail, Clock, Instagram, MessageCircle, CheckCircle, MapPin } from 'lucide-react'
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
@@ -29,6 +29,7 @@ export default function Contact() {
   const contactInfo = [
     { icon: Mail, label: 'Email Us', value: 'hi@littleroot.in', detail: 'We respond within 24 hours' },
     { icon: Clock, label: 'Support Hours', value: 'Mon – Sat', detail: '10:00 AM – 6:00 PM IST' },
+    { icon: MapPin, label: 'Our Address', value: '238, Hodal Punhana Road', detail: 'Punahana, Nuh, Haryana – 122508' },
     { icon: Instagram, label: 'Instagram', value: '@littleroot.in', detail: 'DMs welcome' },
     { icon: MessageCircle, label: 'WhatsApp', value: '+91 98765 43210', detail: 'Quick queries welcome' },
   ]

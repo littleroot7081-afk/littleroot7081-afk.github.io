@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Instagram, Mail, ArrowRight } from 'lucide-react'
+import { Instagram, Mail, ArrowRight, MapPin } from 'lucide-react'
 import { useState } from 'react'
 
 export default function Footer() {
@@ -119,6 +119,14 @@ export default function Footer() {
               <li className="text-sm text-espresso-100 font-body">Mon–Sat, 10am–6pm IST</li>
               <li className="text-sm text-espresso-100 font-body">We reply within 24 hours</li>
             </ul>
+            <div className="mt-5 flex items-start gap-2">
+              <MapPin size={16} className="text-terra-300 flex-shrink-0 mt-0.5" />
+              <p className="text-sm text-espresso-100 font-body leading-relaxed">
+                238, Hodal Punhana Road,<br />
+                Punahana, District Nuh,<br />
+                Haryana – 122508
+              </p>
+            </div>
             <div className="mt-8">
               <p className="text-xs text-espresso-200 font-body mb-3 tracking-wide">CERTIFIED & SAFE</p>
               <div className="flex flex-wrap gap-2">
