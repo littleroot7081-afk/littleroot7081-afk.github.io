@@ -18,7 +18,7 @@ export default function TermsOfService() {
 
           <TosSection title="1. General">
             <p>These Terms of Service govern your use of the Littleroot website and the purchase of products listed thereon. We reserve the right to update these Terms at any time by posting revised terms on this page. Continued use of the website constitutes acceptance of revised terms.</p>
-            <p>Littleroot is operated by Littleroot Private Limited, registered in India.</p>
+            <p>Littleroot is a sole proprietorship firm registered in India under GSTIN 06FEKPA5878H1Z6.</p>
           </TosSection>
 
           <TosSection title="2. Eligibility">

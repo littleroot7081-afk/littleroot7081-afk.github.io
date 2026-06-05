@@ -14,6 +14,8 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsOfService from './pages/TermsOfService'
 import ShippingAndReturns from './pages/ShippingAndReturns'
 import SizeGuide from './pages/SizeGuide'
+import Blog from './pages/Blog'
+import BlogDetail from './pages/BlogDetail'
 import NotFound from './pages/NotFound'
 
 // Trigger build deploy
@@ -40,6 +42,8 @@ export default function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/shipping" element={<ShippingAndReturns />} />
               <Route path="/size-guide" element={<SizeGuide />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<BlogDetail />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
               <Route path="*" element={<NotFound />} />

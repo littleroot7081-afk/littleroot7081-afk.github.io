@@ -344,11 +344,13 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {blogPosts.map(post => (
             <article key={post.id} className="group">
-              <div className="aspect-[16/9] overflow-hidden bg-cream-300 mb-4 img-zoom-container">
+              <Link to={`/blog/${post.slug}`} className="aspect-[16/9] overflow-hidden bg-cream-300 mb-4 img-zoom-container block">
                 <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
-              </div>
+              </Link>
               <p className="font-body text-xs tracking-widest uppercase text-terra-500 mb-2">{post.category}</p>
-              <h3 className="font-heading text-xl font-medium text-espresso-500 group-hover:text-terra-500 transition-colors mb-2">{post.title}</h3>
+              <h3 className="font-heading text-xl font-medium text-espresso-500 group-hover:text-terra-500 transition-colors mb-2">
+                <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+              </h3>
               <p className="font-body text-sm text-espresso-200 leading-relaxed mb-3 line-clamp-2">{post.excerpt}</p>
               <div className="flex items-center justify-between">
                 <span className="font-body text-xs text-espresso-100">{post.readTime}</span>
