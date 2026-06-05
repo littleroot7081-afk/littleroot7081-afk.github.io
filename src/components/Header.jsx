@@ -211,7 +211,7 @@ export default function Header() {
               </div>
             </nav>
             <div className="p-6 border-t border-cream-300">
-              <p className="text-xs text-espresso-200 font-body">hi@littleroot.in</p>
+              <p className="text-xs text-espresso-200 font-body">support@littleroot.online</p>
             </div>
           </div>
         </div>

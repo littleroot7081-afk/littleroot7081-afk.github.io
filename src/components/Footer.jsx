@@ -61,7 +61,7 @@ export default function Footer() {
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-espresso-100 hover:text-terra-300 transition-colors">
                 <Instagram size={18} />
               </a>
-              <a href="mailto:hi@littleroot.in" className="text-espresso-100 hover:text-terra-300 transition-colors">
+              <a href="mailto:support@littleroot.online" className="text-espresso-100 hover:text-terra-300 transition-colors">
                 <Mail size={18} />
               </a>
             </div>
@@ -115,7 +115,7 @@ export default function Footer() {
           <div>
             <h4 className="font-body text-xs tracking-widest uppercase text-cream-100 font-semibold mb-5">Get in Touch</h4>
             <ul className="space-y-3">
-              <li className="text-sm text-espresso-100 font-body">hi@littleroot.in</li>
+              <li className="text-sm text-espresso-100 font-body">support@littleroot.online</li>
               <li className="text-sm text-espresso-100 font-body">Mon–Sat, 10am–6pm IST</li>
               <li className="text-sm text-espresso-100 font-body">We reply within 24 hours</li>
             </ul>

@@ -56,7 +56,7 @@ export default function TermsOfService() {
             <ul>
               <li>We accept returns within <strong>14 days</strong> of delivery.</li>
               <li>Items must be unworn, unwashed, and in original packaging with all tags intact.</li>
-              <li>To initiate a return, email us at <strong>returns@littleroot.in</strong> with your order number.</li>
+              <li>To initiate a return, email us at <strong>support@littleroot.online</strong> with your order number.</li>
               <li>Refunds are processed within 7–10 business days after we receive and inspect the returned item.</li>
               <li>Sale items and gift boxes are non-returnable unless defective.</li>
               <li>If you receive a defective or incorrect item, please contact us within 48 hours of delivery with a photo. We will arrange a replacement or full refund at no additional cost.</li>
@@ -100,7 +100,7 @@ export default function TermsOfService() {
             <p>For questions regarding these Terms, contact us at:</p>
             <div className="bg-cream-200 border border-cream-300 p-5 mt-4 font-body text-sm text-espresso-400 space-y-1">
               <p><strong>Littleroot</strong></p>
-              <p>Email: hi@littleroot.in</p>
+              <p>Email: support@littleroot.online</p>
               <p>Hours: Monday–Saturday, 10am–6pm IST</p>
             </div>
           </TosSection>

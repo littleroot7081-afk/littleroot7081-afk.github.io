@@ -27,7 +27,7 @@ export default function Contact() {
   }
 
   const contactInfo = [
-    { icon: Mail, label: 'Email Us', value: 'hi@littleroot.in', detail: 'We respond within 24 hours' },
+    { icon: Mail, label: 'Email Us', value: 'support@littleroot.online', detail: 'We respond within 24 hours' },
     { icon: Clock, label: 'Support Hours', value: 'Mon – Sat', detail: '10:00 AM – 6:00 PM IST' },
     { icon: MapPin, label: 'Our Address', value: '238, Hodal Punhana Road', detail: 'Punahana, Nuh, Haryana – 122508' },
     { icon: CheckCircle, label: 'GSTIN', value: '06FEKPA5878H1Z6', detail: 'GST Registered Business' },

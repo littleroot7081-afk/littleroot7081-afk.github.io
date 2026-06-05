@@ -87,7 +87,7 @@ export default function PrivacyPolicy() {
               <li><strong>Withdrawal of Consent:</strong> Withdraw consent for marketing communications at any time by clicking "Unsubscribe" in our emails.</li>
               <li><strong>Objection:</strong> Object to the processing of your data in certain circumstances.</li>
             </ul>
-            <p>To exercise any of these rights, contact us at <strong>privacy@littleroot.in</strong>.</p>
+            <p>To exercise any of these rights, contact us at <strong>support@littleroot.online</strong>.</p>
           </PolicySection>
 
           <PolicySection title="7. Security">
@@ -124,8 +124,8 @@ export default function PrivacyPolicy() {
             </p>
             <div className="bg-cream-200 border border-cream-300 p-5 mt-4 font-body text-sm text-espresso-400 space-y-1">
               <p><strong>Littleroot</strong></p>
-              <p>Email: privacy@littleroot.in</p>
-              <p>General: hi@littleroot.in</p>
+              <p>Email: support@littleroot.online</p>
+              <p>General: support@littleroot.online</p>
               <p>Hours: Monday–Saturday, 10am–6pm IST</p>
             </div>
           </PolicySection>
