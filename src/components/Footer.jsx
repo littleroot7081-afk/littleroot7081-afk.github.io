@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Instagram, Mail, ArrowRight, MapPin } from 'lucide-react'
+import { Mail, ArrowRight, MapPin } from 'lucide-react'
 import { useState } from 'react'
 
 export default function Footer() {
@@ -58,9 +58,6 @@ export default function Footer() {
               Premium minimalist kidswear. Crafted for little originals and the big people raising them.
             </p>
             <div className="flex items-center gap-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-espresso-100 hover:text-terra-300 transition-colors">
-                <Instagram size={18} />
-              </a>
               <a href="mailto:support@littleroot.online" className="text-espresso-100 hover:text-terra-300 transition-colors">
                 <Mail size={18} />
               </a>
