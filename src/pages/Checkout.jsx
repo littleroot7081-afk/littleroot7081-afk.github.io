@@ -91,20 +91,6 @@ export default function Checkout() {
     )
   }
 
-  const Field = ({ label, field, type = 'text', placeholder, half = false }) => (
-    <div className={half ? 'flex-1' : 'w-full'}>
-      <label className="block font-body text-xs tracking-wider uppercase text-espresso-300 mb-1.5">{label}</label>
-      <input
-        type={type}
-        value={form[field]}
-        onChange={e => update(field, e.target.value)}
-        placeholder={placeholder}
-        className={`w-full border bg-cream-50 px-4 py-3 font-body text-sm text-espresso-500 placeholder-espresso-100 focus:outline-none transition-colors ${errors[field] ? 'border-terra-400' : 'border-cream-400 focus:border-terra-400'}`}
-      />
-      {errors[field] && <p className="text-xs text-terra-500 font-body mt-1">{errors[field]}</p>}
-    </div>
-  )
-
   return (
     <div className="min-h-screen bg-cream-100">
       {/* Header */}
@@ -182,8 +168,8 @@ export default function Checkout() {
               <div>
                 <h2 className="font-heading text-2xl font-light text-espresso-500 mb-6">Contact Information</h2>
                 <div className="space-y-4">
-                  <Field label="Email Address" field="email" type="email" placeholder="your@email.com" />
-                  <Field label="Mobile Number" field="phone" type="tel" placeholder="10-digit number" />
+                  <Field label="Email Address" field="email" type="email" placeholder="your@email.com" form={form} update={update} errors={errors} />
+                  <Field label="Mobile Number" field="phone" type="tel" placeholder="10-digit number" form={form} update={update} errors={errors} />
                 </div>
                 <p className="font-body text-xs text-espresso-200 mt-3">We'll use this to send your order confirmation and shipping updates.</p>
               </div>
@@ -195,16 +181,16 @@ export default function Checkout() {
                 <h2 className="font-heading text-2xl font-light text-espresso-500 mb-6">Shipping Address</h2>
                 <div className="space-y-4">
                   <div className="flex gap-4">
-                    <Field label="First Name" field="firstName" half />
-                    <Field label="Last Name" field="lastName" half />
+                    <Field label="First Name" field="firstName" half form={form} update={update} errors={errors} />
+                    <Field label="Last Name" field="lastName" half form={form} update={update} errors={errors} />
                   </div>
-                  <Field label="Address" field="address" placeholder="Street address, flat number" />
-                  <Field label="Apartment / Floor (Optional)" field="apartment" placeholder="Apt, suite, unit, etc." />
+                  <Field label="Address" field="address" placeholder="Street address, flat number" form={form} update={update} errors={errors} />
+                  <Field label="Apartment / Floor (Optional)" field="apartment" placeholder="Apt, suite, unit, etc." form={form} update={update} errors={errors} />
                   <div className="flex gap-4">
-                    <Field label="City" field="city" half />
-                    <Field label="State" field="state" half />
+                    <Field label="City" field="city" half form={form} update={update} errors={errors} />
+                    <Field label="State" field="state" half form={form} update={update} errors={errors} />
                   </div>
-                  <Field label="PIN Code" field="pincode" placeholder="6-digit PIN" />
+                  <Field label="PIN Code" field="pincode" placeholder="6-digit PIN" form={form} update={update} errors={errors} />
                   <div className="bg-grove-50 border border-grove-200 px-4 py-3">
                     <p className="font-body text-xs text-grove-600">🚚 Free shipping across India. Expected delivery in 5–7 business days.</p>
                   </div>
@@ -221,11 +207,11 @@ export default function Checkout() {
                   <p className="font-body text-xs text-espresso-300">Your payment info is encrypted and secure.</p>
                 </div>
                 <div className="space-y-4">
-                  <Field label="Name on Card" field="cardName" placeholder="As it appears on the card" />
-                  <Field label="Card Number" field="cardNumber" placeholder="1234 5678 9012 3456" />
+                  <Field label="Name on Card" field="cardName" placeholder="As it appears on the card" form={form} update={update} errors={errors} />
+                  <Field label="Card Number" field="cardNumber" placeholder="1234 5678 9012 3456" form={form} update={update} errors={errors} />
                   <div className="flex gap-4">
-                    <Field label="Expiry Date" field="expiry" placeholder="MM/YY" half />
-                    <Field label="CVV" field="cvv" placeholder="3–4 digits" half />
+                    <Field label="Expiry Date" field="expiry" placeholder="MM/YY" half form={form} update={update} errors={errors} />
+                    <Field label="CVV" field="cvv" placeholder="3–4 digits" half form={form} update={update} errors={errors} />
                   </div>
                 </div>
                 <div className="flex flex-wrap gap-3 mt-4">
@@ -297,6 +283,22 @@ export default function Checkout() {
           </div>
         </div>
       </div>
+    </div>
+  )
+}
+
+function Field({ label, field, type = 'text', placeholder, half = false, form, update, errors }) {
+  return (
+    <div className={half ? 'flex-1' : 'w-full'}>
+      <label className="block font-body text-xs tracking-wider uppercase text-espresso-300 mb-1.5">{label}</label>
+      <input
+        type={type}
+        value={form[field]}
+        onChange={e => update(field, e.target.value)}
+        placeholder={placeholder}
+        className={`w-full border bg-cream-50 px-4 py-3 font-body text-sm text-espresso-500 placeholder-espresso-100 focus:outline-none transition-colors ${errors[field] ? 'border-terra-400' : 'border-cream-400 focus:border-terra-400'}`}
+      />
+      {errors[field] && <p className="text-xs text-terra-500 font-body mt-1">{errors[field]}</p>}
     </div>
   )
 }
