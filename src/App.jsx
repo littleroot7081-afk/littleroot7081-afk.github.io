@@ -12,6 +12,8 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsOfService from './pages/TermsOfService'
+import ShippingAndReturns from './pages/ShippingAndReturns'
+import SizeGuide from './pages/SizeGuide'
 import NotFound from './pages/NotFound'
 
 function ScrollToTop() {
@@ -35,6 +37,8 @@ export default function App() {
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/shipping" element={<ShippingAndReturns />} />
+              <Route path="/size-guide" element={<SizeGuide />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
               <Route path="*" element={<NotFound />} />
