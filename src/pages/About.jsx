@@ -90,6 +90,7 @@ export default function About() {
                 { cert: 'OEKO-TEX® Standard 100', desc: 'All bamboo sleepwear is independently tested for over 100 harmful substances under OEKO-TEX Standard 100.' },
                 { cert: 'AZO Dye Free', desc: 'Our dyes are rigorously tested to ensure they are free from harmful azo compounds.' },
                 { cert: 'BIS/ISI Certified', desc: 'All plush toys meet the Bureau of Indian Standards safety requirements for children\'s toys.' },
+                { cert: 'GST Registered', desc: 'GSTIN: 06FEKPA5878H1Z6 — Littleroot is a registered business under the Goods & Services Tax Act.' },
               ].map(c => (
                 <div key={c.cert} className="flex items-start gap-4">
                   <div className="w-2 h-2 rounded-full bg-terra-400 flex-shrink-0 mt-2" />

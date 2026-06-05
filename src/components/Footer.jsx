@@ -145,7 +145,7 @@ export default function Footer() {
       <div className="border-t border-espresso-400">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-espresso-200 font-body">
-            © {new Date().getFullYear()} Littleroot. All rights reserved.
+            © {new Date().getFullYear()} Littleroot. All rights reserved. | GSTIN: 06FEKPA5878H1Z6
           </p>
           <div className="flex items-center gap-4">
             <Link to="/privacy-policy" className="text-xs text-espresso-200 hover:text-cream-300 transition-colors font-body">Privacy Policy</Link>

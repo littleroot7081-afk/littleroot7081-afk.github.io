@@ -286,6 +286,9 @@ export default function Checkout() {
                 <div className="flex justify-between font-body text-sm text-espresso-300 text-xs">
                   <span>Taxes</span><span>Included</span>
                 </div>
+                <div className="flex justify-between font-body text-xs text-espresso-200">
+                  <span>GSTIN</span><span>06FEKPA5878H1Z6</span>
+                </div>
               </div>
               <div className="border-t border-cream-300 mt-4 pt-4 flex justify-between font-body font-bold text-espresso-500">
                 <span>Total</span><span>{formatPrice(subtotal)}</span>
