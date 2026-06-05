@@ -32,7 +32,7 @@ export default function Contact() {
     { icon: MapPin, label: 'Our Address', value: '238, Hodal Punhana Road', detail: 'Punahana, Nuh, Haryana – 122508' },
     { icon: CheckCircle, label: 'GSTIN', value: '06FEKPA5878H1Z6', detail: 'GST Registered Business' },
     { icon: Instagram, label: 'Instagram', value: '@littleroot.in', detail: 'DMs welcome' },
-    { icon: MessageCircle, label: 'WhatsApp', value: '+91 98765 43210', detail: 'Quick queries welcome' },
+    { icon: MessageCircle, label: 'WhatsApp / Call', value: '+91 70821 69124', detail: 'Support hours apply' },
   ]
 
   const faqs = [

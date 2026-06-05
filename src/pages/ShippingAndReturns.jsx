@@ -81,10 +81,15 @@ export default function ShippingAndReturns() {
           <p className="font-body text-sm text-espresso-300 mb-6">
             We are always here to help. Reach out to our customer support team for quick assistance.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-6 text-sm font-body">
+          <div className="flex flex-col sm:flex-row justify-center gap-8 text-sm font-body">
             <div>
               <span className="text-espresso-200 uppercase tracking-wider text-xs block mb-1">Email Support</span>
               <a href="mailto:support@littleroot.online" className="text-terra-500 font-semibold hover:underline">support@littleroot.online</a>
+            </div>
+            <div className="hidden sm:block border-r border-cream-400"></div>
+            <div>
+              <span className="text-espresso-200 uppercase tracking-wider text-xs block mb-1">Phone / WhatsApp</span>
+              <a href="tel:+917082169124" className="text-terra-500 font-semibold hover:underline">+91 70821 69124</a>
             </div>
             <div className="hidden sm:block border-r border-cream-400"></div>
             <div>

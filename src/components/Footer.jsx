@@ -116,6 +116,7 @@ export default function Footer() {
             <h4 className="font-body text-xs tracking-widest uppercase text-cream-100 font-semibold mb-5">Get in Touch</h4>
             <ul className="space-y-3">
               <li className="text-sm text-espresso-100 font-body">support@littleroot.online</li>
+              <li className="text-sm text-espresso-100 font-body">Phone: +91 70821 69124</li>
               <li className="text-sm text-espresso-100 font-body">Mon–Sat, 10am–6pm IST</li>
               <li className="text-sm text-espresso-100 font-body">We reply within 24 hours</li>
             </ul>
