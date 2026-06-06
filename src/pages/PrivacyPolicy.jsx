@@ -124,6 +124,7 @@ export default function PrivacyPolicy() {
             </p>
             <div className="bg-cream-200 border border-cream-300 p-5 mt-4 font-body text-sm text-espresso-400 space-y-1">
               <p><strong>Littleroot</strong></p>
+              <p>Owner: AADIL</p>
               <p>Email: support@littleroot.online</p>
               <p>Phone: +91 70821 69124</p>
               <p>General: support@littleroot.online</p>
